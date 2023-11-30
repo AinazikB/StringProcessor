@@ -33,12 +33,15 @@ public class StringProcessorTest{
         assertFalse(sp.isStrongPassword("3443"));
     }
 
+
     @Test
-    public void resExpression() {
+    public void testExpression(){
         StringProcessor sp = new StringProcessor();
-        double expected = 0.0;
-        double actual = sp.calculateExpression("vgvdhss");
+        double expected = 4.5;
+        double actual = sp.calculateExpression("(2 + 1)*3/2");
         double delta = 0.001;
         assertEquals(expected, actual, delta);
     }
+
 }
+
