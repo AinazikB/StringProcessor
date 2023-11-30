@@ -113,12 +113,6 @@ public class StringProcessor {
                 return 2;
             return 0;
         }
-
-        public static void main(String[] args) {
-            String expression = "3 + 5 * ( 2 - 8 ) / 4";
-            double result = calculateExpression(expression);
-            System.out.println("Result of the expression: " + result);
-        }
 }
 
 
